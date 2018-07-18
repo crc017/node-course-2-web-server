@@ -31,6 +31,7 @@ app.use((req, res, next) => {
         docTitle: 'Maintenance Page',
         welcomeMessage: 'So Sorry... :(  Be back Soon!!!'
     })
+    next();
 });
 
 

@@ -24,15 +24,15 @@ app.use((req, res, next) => {
         }
     });
     next();
-})
-
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-        docTitle: 'Maintenance Page',
-        welcomeMessage: 'So Sorry... :(  Be back Soon!!!'
-    })
-    next();
 });
+
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs', {
+//         docTitle: 'Maintenance Page',
+//         welcomeMessage: 'So Sorry... :(  Be back Soon!!!'
+//     })
+//     next();
+// });
 
 
 //middleware to take absolute path to the folder that you want to serve up
